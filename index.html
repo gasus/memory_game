@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory game</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="wrapper">
+
+
+
+		<div id="soundBtn"></div>
+
+		<div id="startScreen" data-tid="App">
+			<div id="logoStart" class="logoImg logoStart"></div>
+			<div class="textLogo">MEMORY GAME</div>
+			<div id="btnStart" class="btn" data-tid="NewGame-startGame"><div class="btnText">Начать игру</div></div>
+		</div>
+
+
+		<div id="gameScreen">
+			<div class="menu">
+				<div id="btnRestart" class="btnRestart" data-tid="Menu-newGame">Начать заново</div>
+				<div id="scores" data-tid="Menu-scores">Очки: 0</div>
+			</div><br>
+			<div id="playingField" data-tid="Deck">
+			</div>
+		</div>
+
+
+		<div id="resultScreen">
+			<div id="logoEnd" class="logoImg logoEnd"></div>
+			<div class="text">Поздравляем!</div>
+			<div id="endScore" class="text textScore">Ваш итоговый счет: </div>
+			<div id="btnRestart2" class="btn" data-tid="EndGame-retryGame"><div class="btnText">Еще раз</div></div>
+		</div>
+	</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+@font-face {
+	font-family: 'Open Sans'; 
+	src: url(OpenSans-ExtraBold); 
+}
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	/*background-color: #1c6d2f;*/
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none; 
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	align-content: center; 
+	justify-content: center; 
+	overflow: hidden;   
+}
+
+@-webkit-keyframes pulse {
+	from {
+		background: #030;
+	}
+	33% {
+		background-color: #003;
+	}
+	66% {
+		background-color: #D85656;
+	}
+	to {
+		background: #030;
+	}
+}
+
+.wrapper{
+	width: 50%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center; 
+}
+
+#startScreen{
+	width: 70%;
+	display: flex;
+	align-items: center;
+	align-content: center; 
+	justify-content: center; 
+	overflow: auto; 
+	flex-direction: column;  
+}
+
+#soundBtn{
+	background-image: url(../img/sndon.png);
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+
+.logoImg {
+	margin: 0 20%;
+	width: 100%;
+	background-size: cover;
+}
+
+.logoStart{
+	background-image: url(../img/StartGame@2x.png);
+}
+
+.logoEnd{
+	background-image: url(../img/Group2@2x.png);
+}
+
+.text {
+	margin: 20px 0 0 0;
+	opacity: 0.85;
+	font-family: 'Open Sans';
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: 0.15px;
+	line-height: 38px;
+}
+
+.textLogo {
+	margin: 20px 0 0 0;
+	opacity: 0.85;
+	font-family: 'Open Sans';
+	font-size: 46px;
+	color: #fff;
+	letter-spacing: 0.2px;
+}
+
+.textScore{
+	margin: 0;
+}
+
+.btn {
+	margin: 80px 0 0 0;
+	background: opacity;
+	border: 2px solid #fff;
+	padding: 10px 30px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0;
+	opacity: 0.85;
+}
+
+.btnRestart {
+	display: none;
+	float: left;
+	color: #fff;
+	cursor: pointer;
+	opacity: 0.8;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	letter-spacing: -0.25px;
+}
+
+#scores {
+	display: inline-block;
+	float: right;
+	user-select: none; 
+	color: #fff;
+	opacity: 0.8;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	letter-spacing: 0;
+}
+
+
+#gameScreen{
+	display: none;
+	width: 100%;
+}
+
+#playingField{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+	margin: 10px auto auto auto;
+}
+
+.card{
+	width: 15%;
+	background-image: url(../img/cards/card.png);
+	background-size: cover;
+	margin-bottom: 2%;
+	cursor: default;
+}
+
+.cardHover:hover{
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+#resultScreen{
+	width: 70%;
+	display: none;
+	align-items: center;
+	align-content: center; 
+	justify-content: center; 
+	overflow: auto; 
+	flex-direction: column; 
+}
+
+@media (max-width: 1600px) { 
+	.wrapper{
+		width: 65%;
+	}
+	#soundBtn{
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@media (max-width: 1024px) { 
+	.wrapper{
+		width: 75%; 
+	}
+	#soundBtn{
+		width: 55px;
+		height: 55px;
+	}
+}
+
+@media (max-width: 768px) { 
+	.wrapper{
+		width: 90%; 
+	}
+	#soundBtn{
+		width: 40px;
+		height: 40px;
+	}
+}
